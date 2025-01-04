@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verifficador de idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+    <main>
+        <section>
+            <div>
+               <p> 
+                    <label for="txtano">Ano de nascimento: </label><input type="number" name="txtano" id="txtano">
+               </p>
+               <p class="sex"> Sexo: 
+
+                    <input type="radio" name="radsex" id="msc" checked>
+                    <label for="msc">Maculino</label>
+
+                    <input type="radio" name="radsex" id="fem">
+                    <label for="fem">Feminino</label>
+               </p>
+               <p class="centro">
+                    <input type="button" value="verificar" onclick="verificar()" class="button">
+               </p>
+            </div>
+            <div id="res">
+                Preencha os dados acima para verificar o resultado
+            </div>
+        </section>
+       
+    </main>
+    <footer>
+        <p> @Stelsol</p>
+    </footer>
+    <script src="Script.JS"></script>
+</body>
+</html>

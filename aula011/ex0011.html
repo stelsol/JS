@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificador</title>
+    <style>
+        body{
+            background-color: rgba(5, 1, 58, 0.979);
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        main{
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.295);
+            padding: 20px;
+            text-align: center;
+            margin-top: 170px;
+            border-radius: 30px;
+        }
+        #Pais{
+            display: block;
+            margin: auto;
+            margin-top:10px ;
+        }
+        .button{
+            border-radius: 9px;
+            margin: auto;
+            display: block;
+            margin-top: 10px;
+        }
+       
+
+    </style>
+    
+</head>
+<body>
+    <main>
+        <h2>Identificador de Gringos!!</h2>
+        
+        <label for="Pais">Informe seu país de origem: </label><input type="text" name="Pais" id="Pais">
+        <input type="button" value="Varificar" class="button" onclick="ver()">
+        <div id="res"></div>
+    </main>
+    <script>
+        function ver(){
+            var Pais = document.getElementById ('Pais').value
+            var res = document.getElementById ('res')
+            res.innerHTML = ""
+            res.innerHTML  += `<p>Seu país de origem é ${Pais}</p>`
+            if(Pais === "Brasil"){
+                res.innerHTML += `<p> Bem vindo de volta ao Brasil !! </p>`
+            } else{
+                res.innerHTML += `<p> Estrangeiro</p>`
+                res.innerHTML += `<p> Seja bem vindo, aproveite suas férias!!</p>`
+            }
+             res.innerHTML += `<p> Welcome to Brazil!</p>`
+        }
+
+
+    </script>
+</body>
+</html>

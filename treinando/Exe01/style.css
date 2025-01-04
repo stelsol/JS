@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+body{
+    background-color: rgb(168, 51, 168);
+}
+header{
+    text-align: center;
+}
+
+h1{
+    margin: 40px;
+    font: bold 30px;
+    color: white;
+}
+main{
+    flex-flow: column nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    background-color: rgb(236, 224, 185);
+    border-radius: 10px;
+    border: .5px solid rgba(0, 0, 0, 0.548);
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.459);
+    width: 400px;
+}
+.form{
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.botao{
+    border-radius: 7px;
+    border: 1px solid rgb(199, 146, 199);
+    padding: 3px;
+    margin-top: 7px;
+    background-color: rgb(80, 26, 80);
+    color: rgb(219, 151, 219);
+}
+.botao:hover{
+    border: 1px solid rgb(80, 26, 80);
+    background-color: rgb(199, 146, 199) ;
+    color: rgb(80, 26, 80) ;
+}
+.del{
+    border-radius: 7px;
+    border: 1px solid rgb(199, 146, 199);
+    padding: 3px;
+    margin-top: 7px;
+    background-color: rgb(80, 26, 80);
+    color: rgb(219, 151, 219);
+}
+.del:hover{
+    border: 1px solid rgb(80, 26, 80);
+    background-color: rgb(199, 146, 199) ;
+    color: rgb(80, 26, 80) ;
+}
+#res{
+    margin: 20px;
+    text-align: center;
+}
+footer{
+    margin: 20px;
+    text-align: center;
+}
+footer > a{
+    color: white;
+}

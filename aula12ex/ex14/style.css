@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(57, 80, 212);
+    font: normal 15pt arial;
+   
+}
+header{
+    color: white;
+    text-align: center;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+section{
+    background-color: rgb(228, 225, 225);
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.459);
+
+}
+div{
+    text-align: center;
+    padding: 5px;
+}
+#msg{
+    color: black;
+    font:  bolder 19px Arial;
+}
+footer{
+    padding: 24px;
+    text-align: center;
+    font-style: italic;
+}
+.link{
+    color: aliceblue;
+    text-decoration: none;
+    font: italic 23px arial;
+}
+
+/* 
+manha #FCDD8E 
+tarde #AA796B
+noite #020B08
+*/

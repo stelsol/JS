@@ -1,0 +1,50 @@
+
+body{
+    font: normal 15pt arial;
+    overflow: hidden;
+    background-color: rgb(12, 12, 122);
+}
+header{
+    color: white;
+    text-align: center;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    background-color: rgb(228, 225, 225);
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.459);
+    text-align: center;
+}
+#txtano{
+    border: 1px solid rgba(0, 0, 0, 0.479);
+    border-radius: 20px;
+}
+.centro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.button{
+    border-radius: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.582);
+    padding: 7px;
+    width: 99px;
+    color: white;
+    background-image: linear-gradient(to bottom, rgb(23, 23, 158),rgb(7, 7, 78));
+}
+#res{
+    text-align: center;
+    color: rgb(255, 0, 0);
+}
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}

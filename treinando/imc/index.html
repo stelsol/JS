@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IMC</title>
     <link rel="stylesheet" href="style.css">
+    <script src="interações.js"></script>
 </head>
 <body>
     <header>
@@ -12,7 +13,9 @@
     </header>
     <main>
         <section>
-            <p> Para fazer o cálculo do seu IMC, informe abaixo os seguintes dados </p>
+            <div class="para">
+                <p> Para fazer o cálculo do seu IMC, informe abaixo os seguintes dados </p>
+            </div>
             <div id="form">
                  <p>
                         <input type="text" name="txtn" id="txtn" placeholder="Nome">
@@ -20,9 +23,9 @@
                 </p>
                 <p>
                         <span>Sexo: </span>
-                        <input type="radio" name="omas" id="omas" checked>
+                        <input type="radio" name="rsex" id="omasc" checked>
                         <label for="omasc">Masculino</label>
-                        <input type="radio" name="ofem" id="ofem">
+                        <input type="radio" name="rsex" id="ofem">
                         <label for="ofem">Feminino</label>
                 </p>
                 <p>
@@ -30,19 +33,19 @@
                         <input type="number" name="alt" id="alt" placeholder="Altura">
                 </p>
                 <P>
-                        <button type="button" id="button">Cálcular</button>
-                        <button type="button" id="button">Limpar</button>
+                    <input type="button" value="Cálcular" class="button" onclick="cal()">
+                    <input type="button" value="Limpar" class="button" onclick="del()">
                  </P>
             </div>
             <div id="res">
-                aqui vai ficar o resultado
-                <img src="mas-m.png" alt="Imagem ilustrativa de acordo com seu peso!">
+                Preencha os dados acima corretamente para verificar o resultado!
+            
             </div>
         </section>
         
     </main>
     <footer>
-        <p> final</p>
+        <p> @Stelsol</p>
     </footer>
 </body>
 </html>

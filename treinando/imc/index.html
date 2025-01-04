@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>IMC</h1>
+    </header>
+    <main>
+        <section>
+            <p> Para fazer o cálculo do seu IMC, informe abaixo os seguintes dados </p>
+            <div id="form">
+                 <p>
+                        <input type="text" name="txtn" id="txtn" placeholder="Nome">
+                        <input type="number" name="txti" id="txti" placeholder="Idade">
+                </p>
+                <p>
+                        <span>Sexo: </span>
+                        <input type="radio" name="omas" id="omas" checked>
+                        <label for="omasc">Masculino</label>
+                        <input type="radio" name="ofem" id="ofem">
+                        <label for="ofem">Feminino</label>
+                </p>
+                <p>
+                        <input type="number" name="pes" id="pes" placeholder="Peso">
+                        <input type="number" name="alt" id="alt" placeholder="Altura">
+                </p>
+                <P>
+                        <button type="button" id="button">Cálcular</button>
+                        <button type="button" id="button">Limpar</button>
+                 </P>
+            </div>
+            <div id="res">
+                aqui vai ficar o resultado
+                <img src="mas-m.png" alt="Imagem ilustrativa de acordo com seu peso!">
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <p> final</p>
+    </footer>
+</body>
+</html>

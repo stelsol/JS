@@ -1,0 +1,93 @@
+@charset "UTF-8";
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* 
+verde 1 : #7CB863; fundo
+verde 2 : #2a471d; botões 
+verde 3 : #56853D; header e footer
+tom de preto : #2E332C; Para as letras
+bege : #E8E69E; para a div com as informações
+*/
+:root{
+    --cor0: #8bac7d;
+    --cor1: #2a471d;
+    --cor2: #56853D;
+    --cor3: #2E332C;
+    --cor4: #d4d3ae; 
+}
+html,body{
+    width: 100vw;
+    height: 100vh;
+    display: flex; 
+    flex-direction: column; 
+    overflow: scroll;
+    overflow-x: hidden;
+    background-color: var(--cor0);
+   
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background-image: linear-gradient( to left,var(--cor1),var(--cor2), var(--cor1));
+    width: 100vw;
+    height: 50px;
+}
+header > h1 {
+    text-align: center;
+    color: whitesmoke;
+    padding: 12px;
+}
+main{
+    background-color: var(--cor0);
+    color: var(--cor3);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+    margin: 50px;
+}
+section{
+    background-color: var(--cor4);
+    width: 350px;
+    height: 500px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    
+}
+#form, #form > p{
+    margin: 10px;
+}
+#button{
+    background-color: var(--cor1);
+    color: var(--cor0);
+    border: 1px solid var(--cor0);
+    border-radius: 10px;
+    padding: 4px;
+}
+#button:hover{
+    background-color: var(--cor0);
+    color: var(--cor1);
+    border: 1px solid var(--cor1);
+}
+#res{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+footer{
+    padding: 9px;
+    background-image: linear-gradient(to left,var(--cor1),var(--cor2), var(--cor1));
+    text-align: center;
+    color: whitesmoke;
+}

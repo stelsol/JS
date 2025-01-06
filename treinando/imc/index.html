@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IMC</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="média-query.css" media="(min-width:768px)">
     <script src="interações.js"></script>
 </head>
 <body>
@@ -12,6 +13,34 @@
         <h1>IMC</h1>
     </header>
     <main>
+        <section>
+            <div id="inf">
+                <h2>
+                    Índice de Massa Corporal (IMC)
+                </h2>
+                <p id="pa">
+                    O Índice de Massa Corporal (IMC) é uma medida utilizada para avaliar se uma pessoa está no peso ideal em relação à sua altura. É calculando o peso (em kg) pela altura ao quadrado (em metros).
+                </p>
+                <h3>
+                    Tabela de Classificação do IMC
+                </h3>
+                <p>
+                    <picture>
+                        <!-- quando a tela estiver acima de 768 ira aparecer a imagem Grande-->
+                        <source srcset="Tabela-G.jpeg" media="(min-width:768px)">
+                        <!-- quando a tela estiver até 767 ira aparecer a imagem pequen-->
+                        <source srcset="Tabela.jpeg" media="(max-width:767px)">
+                        <img src="Tabela.jpeg" alt="tabela IMC">
+                    </picture>
+                </p>
+            </div>
+            <div id="aviso">
+                <p>
+                    Abaixo, você encontra uma calculadora de IMC para descobrir sua classificação de forma simples e rápida.
+                </p>
+            </div>
+        </section>
+
         <section>
             <div class="para">
                 <p> Para fazer o cálculo do seu IMC, informe abaixo os seguintes dados </p>
@@ -30,7 +59,7 @@
                 </p>
                 <p>
                         <input type="number" name="pes" id="pes" placeholder="Peso">
-                        <input type="number" name="alt" id="alt" placeholder="Altura">
+                        <input type="number" name="alt" id="alt" placeholder="Altura ex:1.70" title="insira sua altura em metros, ex: 1.70">
                 </p>
                 <P>
                     <input type="button" value="Cálcular" class="button" onclick="cal()">
@@ -42,7 +71,6 @@
             
             </div>
         </section>
-        
     </main>
     <footer>
         <p> @Stelsol</p>

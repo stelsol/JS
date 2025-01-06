@@ -1,0 +1,20 @@
+@charset "UTF-8";
+section{
+    width:500px;
+}
+#pa{
+    font-size: 1em;
+}
+
+#aviso{
+    background-color: rgba(255, 255, 0, 0.452);
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(161, 161, 56, 0.678);
+ }
+ h3{
+    margin-top: 10px;
+ }
+ 
+   

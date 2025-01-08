@@ -5,7 +5,10 @@ valores.sort()
 console.log(valores[0])
 console.log(valores[1])
 console.log(valores[2])
-*/
 for (let pos=0; pos < valores.length; pos++){
     console.log(`Aposição ${pos} tem o valor ${valores[pos]}`)
+}
+*/
+for (let pos in valores){
+    console.log(`a posição ${pos} tem o valor ${valores[pos]}`)
 }

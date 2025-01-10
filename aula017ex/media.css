@@ -1,0 +1,13 @@
+@charset "UTF-8";
+#num{
+    width: 60px;
+}
+#res{
+    border: 1px solid rgba(0, 0, 0, 0.507);
+    box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.164);
+    width: 180px;
+    height: 100px;
+    padding: 8px;
+    text-align: center;
+    overflow-y: auto;
+}

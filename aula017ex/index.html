@@ -6,7 +6,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="stylestyle.css">
     <link rel="stylesheet" href="media.css" media="screen and (max-width: 767px)">
-    <script src="função.js"></script>
 </head>
 <body>
     <header>
@@ -23,15 +22,19 @@
                 <p>
                     <button id="ad" onclick="Adicionar()">Adicionar</button>
                 </p>
+                <select name="flista" id="flista" size="6" title="Lista de números"></select>
+                <p>
+                    <button id="fn" onclick="Finalizar()">Finalizar</button>
+                </p>
             </div>
             <div id="res">
-                valor 3 foi adicionado
+
             </div>
-            <button id="fn" onclick="Finalizar()">Finalizar</button>
         </section>
     </main>
     <footer>
         <a href="#">@Stelsol</a>
     </footer>
+    <script src="função.js"></script>
 </body>
 </html>

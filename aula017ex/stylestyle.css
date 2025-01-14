@@ -28,7 +28,7 @@ main{
     align-items: center;
 }
 section{
-    width: 80%;
+    width: 600px;
     height: 100%;
     background-color: white;
     padding: 20px;
@@ -64,6 +64,7 @@ section{
 #flista{
     width: 300px;
     padding: 10px;
+    text-align: center;
 }
 
 #fn{

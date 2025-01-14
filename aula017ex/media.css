@@ -1,7 +1,13 @@
 @charset "UTF-8";
 #num{
     width: 60px;
+    
+}
+section{
+    width: 90%;
+    height: 100%;
+    
 }
 #flista{
-    width: 190px;
+    width: 250px;
 }

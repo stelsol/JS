@@ -17,7 +17,7 @@ function Adicionar(){
         res.innerHTML = ''
     }
     num.value =''
-    num.focus()        
+    num.focus()         
 }
 
 function Finalizar(){
@@ -32,7 +32,7 @@ function Finalizar(){
         let media = 0
         for(let pos in valores){
             soma += valores[pos]
-            if(valores[pos > maior]){
+            if(valores[pos] > maior){
                 maior = valores[pos]
             }
             if(valores[pos] < menor){

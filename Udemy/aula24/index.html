@@ -20,22 +20,25 @@
                 Maior que 40
                 </p>
                 <p><strong>IMC:</strong> <br>
-                    Menor que 18,5<br>
-                    Entre 18,5 - 24,9<br>
-                    Entre 25 - 29,9<br>
-                    Entre 30 - 34,9 <br>
-                    Entre 35 - 39,9 <br>
-                    Maior que 40</p>
+                    Abaixo do Peso<br>
+                    Peso normal<br>
+                    Sobrepeso<br>
+                    Obesidade grau I<br>
+                    Obesidade grau II<br>
+                    Obesidade grau III</p>
             </div>
             <h2>Calcule seu IMC</h2>
             <div class="inputs">
                 <label for="Peso">Peso:</label>
-                <input type="text" class="campos" name="Campo1" id="Peso">
+                <input type="number" class="campos" name="Campo1" id="Peso" placeholder="informe seu peso ex: 65 ou 65.6">
                 <label for="Alt">Altura:</label>
-                <input type="text" class="campos" name="Campo2" id="Alt">
+                <input type="number" class="campos" name="Campo2" id="Alt" placeholder="informe sua altura ex: 1.80">
             </div>
-            <button class="botao">Enviar</button>
+            <button class="botao" onclick="calcular()">Enviar</button>
+            <div class="res">
+            </div>
         </section>
     </main>
+    <script src="calculo.js"></script>
 </body>
 </html>

@@ -45,17 +45,18 @@ main{
     align-items: center;
     flex-flow: row nowrap;
     font-size: 1em;
-    margin-bottom: 15px;
-    line-height: 1.3;
+    
 }
 .paragrafos p{
-    margin: 0px 30px;
+    margin: 10px 50px;
+    line-height: 1.5;
 }
 .campos{
     border-radius: 10px;
     margin-bottom: 15px;
     border: 1.4px solid var(--corfundo);
     outline-color: var(--corfundo);
+    background-color: transparent;
     padding: 5px;
     width: 100%;
 }
@@ -73,3 +74,8 @@ main{
     background-color: #0d412b;
 }
 
+.res p{
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}

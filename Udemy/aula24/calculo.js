@@ -38,7 +38,8 @@ function calcular(){
             res.innerHTML = `<p>Obesidade grau III seu IMC é de: ${imc}</p> `
             res.style.backgroundColor="#E60026"
         }
-    //res.innerHTML = " "
+    res.innerHTML = " "
     //console.log(`${imc.toFixed(2)}`)
     }
 }
+// irei ver a resolução do professor e irei comparar!

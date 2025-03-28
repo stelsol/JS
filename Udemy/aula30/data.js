@@ -64,8 +64,8 @@ function semana(semanaconv){
 }
 
 const horario = new Date()
-const Convert = horario.getMonth()
-const semanaconv = horario.getDay()
+const Convert = horario.getMonth() // * Pega o mes de 0 a 11
+const semanaconv = horario.getDay() // * pega o dia da semana de 0 a 6
 const exibir = document.querySelector('#horadia')
 //console.log(hoje(horario))
 

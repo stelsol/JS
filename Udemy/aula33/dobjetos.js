@@ -26,6 +26,6 @@ const frutas = {
         c2:'Chocolate Branco'
     }
 }
-const {f3,calda:{c1,c2}}=frutas
+const {calda:{c1,c2}}=frutas
 // Via desestruturação é para desestruturar e pegar informações exatas que seja necessaria
-console.log(f3,c2) 
+console.log(frutas) 

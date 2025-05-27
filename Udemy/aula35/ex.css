@@ -1,0 +1,29 @@
+*{
+    font-family:'Times New Roman', Times, serif ;
+}
+body{
+    background-color: rgb(163, 116, 163);
+    width:100vw;
+    height:100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: rgb(255, 242, 219);
+    width: 70%;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    border-radius: 10px;
+    
+
+}
+h1{
+    text-transform: uppercase;
+}
+.texto{
+    background-color: orange;
+}

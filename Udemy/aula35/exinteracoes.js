@@ -13,7 +13,7 @@ for(let i = 0; i < adicionar.length; i++){
     let tagcriada = document.createElement(tag)
     tagcriada.innerText = texto;
 
-    // Se for a última entrada do array e a tag for 'p', adiciona a classe
+    // Se for a última entrada do array e a tag for 'p', adiciona a classe. obs: maneira de adicionar classe
     if(i === adicionar.length -1) {
         tagcriada.classList.add('texto'); // nome da classe que você quiser
     }

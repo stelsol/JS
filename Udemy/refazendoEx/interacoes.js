@@ -1,3 +1,5 @@
+//! Analisar o código e entender melhor !!
+
 const conteudo = [
     {tag:'img', src:'imagens/sapoprincessa.webp', alt:'A princesa e o Sapo', classe:'ilus-img'},
     {tag:'p', texto:'Tiana é uma jovem determinada que sonha em abrir seu próprio restaurante em Nova Orleans. Sua vida muda quando conhece um príncipe transformado em sapo por um feitiço. Ao beijá-lo, ela também se transforma e os dois embarcam numa jornada pelo pântano para quebrar a maldição. No caminho, enfrentam perigos, fazem novos amigos e descobrem o verdadeiro significado do amor. Uma história mágica sobre sonhos, coragem e escolhas do coração.', classe:'ilus-txt'}
@@ -5,6 +7,21 @@ const conteudo = [
 const exibir = document.querySelector('.container')
 const div = document.createElement('div')
 
-for (let i = 0; i = conteudo.length; i++){
-    
+for (let i = 0; i < conteudo.length; i++){ //havia errado, coleoquei = atribuição ao invés de comparar
+    let { tag, texto, src, alt, classe} = conteudo[i]
+    let tagcriada = document.createElement(tag)
+    // tagcriada.innerText = texto
+    // jeito de adicionar a imagem e a classe via javascript
+    if (tag === 'img') {
+        tagcriada.src = src;
+        tagcriada.alt = alt;
+    } else {
+        tagcriada.innerText = texto;
+    }
+
+    if (classe) {
+        tagcriada.classList.add(classe);
+    }
+    div.appendChild(tagcriada)
 }
+exibir.appendChild(div)

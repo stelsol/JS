@@ -18,10 +18,27 @@ body{
     border: 1px solid rgba(0, 0, 0, 0.219);
     box-shadow: 1px 1px 10px  rgba(0, 0, 0, 0.445);
     border-radius: 10px;
-    background-color: rgba(128, 128, 128, 0.377);
+    background-color: rgba(128, 128, 128, 0.116);
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: nowrap column;
+}
+.container > div{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.ilus-img{
+    border-radius: 8px;
+    max-width: 40%;
+    max-height: 60%;
+    margin: 10px;
+}
+.ilus-txt{
+    background-color:rgba(128, 128, 128, 0.377) ;
+    border-radius: 10px;
+    padding: 10px;
 }

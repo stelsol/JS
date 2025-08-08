@@ -2,9 +2,57 @@
     --cor-purple-neon:#CC66DA;
     --cor-purple:#9929EA;
     --cor-Black:#000;
+    --cor-black-cinza:#090909;
+    --cor-cinza:#171717;
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
+}
+body{
+    max-width: 100vw;
+    max-height: 100vh;
+    background-color:var(--cor-black-cinza);
+}
+.inicio{
+    background-color:var(--cor-Black);
+    padding: 0px 20px;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-logo{
+    font-size: 2.3em;
+}
+.menu-lista{
+    display: flex;
+    align-items: center;
+    
+}
+.menu-container{
+    display: flex;
+    gap: 5%;
+}
+.opcoes{
+    list-style: none;
+    font-size: 1.3em;
+}
+/* Main configuration */
+/* .centro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+} */
+.main-wid{
+    max-width: 80%;
+    margin: auto;
+}
+.main-container{
+    background-color: var(--cor-cinza);
+    width: 100%;
 }

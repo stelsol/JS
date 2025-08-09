@@ -18,28 +18,31 @@ body{
 }
 .inicio{
     background-color:var(--cor-Black);
-    padding: 0px 20px;
+    
 }
 .menu{
     display: flex;
+    /* width: 100%; */
+    margin: auto;
     justify-content: space-between;
     align-items: center;
-}
-.menu-logo{
-    font-size: 2.3em;
+    /* background-color: var(--cor-purple); */
 }
 .menu-lista{
     display: flex;
-    align-items: center;
-    
-}
-.menu-container{
-    display: flex;
-    gap: 5%;
+    gap: 10px;
 }
 .opcoes{
-    list-style: none;
+    list-style-type:none;
+}
+.opcoes a{
+    text-decoration: none;
+    padding: 10px;
     font-size: 1.3em;
+}
+.material-symbols-outlined{
+    color: #9929EA;
+    font-size: 100px;
 }
 /* Main configuration */
 /* .centro{
@@ -50,9 +53,15 @@ body{
 } */
 .main-wid{
     max-width: 80%;
-    margin: auto;
+}
+.centro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
 }
 .main-container{
     background-color: var(--cor-cinza);
     width: 100%;
+    text-align: center;
 }

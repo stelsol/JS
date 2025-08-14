@@ -73,7 +73,7 @@ body{
     background-color: var(--cor-cinza);
     width: 100%;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
 }
 .main-container h2{
     padding-bottom: 2px;
@@ -88,4 +88,17 @@ body{
     font-family: var(--font-prncipal);
     border-bottom: 3px solid var(--cor-purple);
     width: 138px;
+}
+.comentario-container{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 15px;
+    color: var(--cor-Black);
+    padding: 20px 50px;
+}
+.comentario-container a{
+    padding: 10px;
+    width: 10%;
+    text-align: center;
+    background-color: var(--cor-purple-neon);
 }

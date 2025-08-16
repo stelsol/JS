@@ -8,7 +8,7 @@ const produtos = [
     { nome: "Bola", preco: 20, categoria: "Esporte" }
 ];
 
-for(let i= 2; i < produtos.length; i++){
-    let {pessoa1, pessoa2,pessoa3} = produtos
-    console.log(produtos[pessoa1])
+for(let i= 0; i < produtos.length; i++){
+    let{nome, preco, categoria} = produtos[i]
+    console.log(` Produto: ${produtos[0]["nome"]} - Preço: ${produtos[0]["preco"]}`)
 }

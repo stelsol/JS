@@ -70,6 +70,8 @@ body{
     padding-top: 3%;
 }
 .main-container{
+    display: flex;
+    gap: 30px;
     background-color: var(--cor-cinza);
     width: 100%;
     border-radius: 10px;
@@ -79,9 +81,9 @@ body{
     background-color: var(--cor-cinza);
     width: 100%;
     border-radius: 10px;
-    padding: 20px;
+    padding: 40px;
 }
-.main-container h2{
+.titulo-h2{
     padding-bottom: 2px;
     margin: 0 auto;
     border-bottom: 3px solid var(--cor-purple);
@@ -94,6 +96,17 @@ body{
 }
 .main-cartaz{
     width: 250px;
+}
+.main-div2 p{
+    font-family: var(--font-prncipal);
+    text-indent: 2em;
+    text-align: justify;
+    padding: 10px;
+}
+.main-div3{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
 }
 .material-symbols-outlined{
     display: flex;

@@ -60,6 +60,9 @@ body{
 .main-wid{
     max-width: 80%;
     margin: auto;
+        margin-bottom:20px ;
+    
+
 }
 .centro{
     display: flex;
@@ -82,6 +85,7 @@ body{
     width: 100%;
     border-radius: 10px;
     padding: 40px;
+    margin-bottom:40px ;
 }
 .titulo-h2{
     padding-bottom: 2px;
@@ -96,6 +100,7 @@ body{
 }
 .main-cartaz{
     width: 250px;
+    border-radius:5px;
 }
 .main-div2 p{
     font-family: var(--font-prncipal);

@@ -45,10 +45,25 @@ body{
     font-size: 1.2em;
     font-weight: bold;
     font-family: var(--font-prncipal);
+    color:white;
+}
+.opcoes a:hover{
+    color:var(--cor-purple);
 }
 .material-symbols-outlined{
-    color: #9929EA;
     font-size: 30px !important;
+}
+.arrow_back{
+    color: var(--cor-purple);
+}
+.arrow_back:hover{
+    color: white;
+}
+.op1{
+    color: white;
+}
+.op1:hover{
+    color: var(--cor-purple);
 }
 /* Main configuration */
 /* .centro{
@@ -57,10 +72,18 @@ body{
     align-items: center;
     flex-flow: column;
 } */
+
+.voltar{
+    width: 100%;
+    color: var(--cor-purple);
+}
+.voltar:hover{
+    color: white;
+}
 .main-wid{
     max-width: 80%;
     margin: auto;
-        margin-bottom:20px ;
+    margin-bottom:20px ;
     
 
 }
@@ -117,6 +140,9 @@ body{
     display: flex;
     flex-direction: row;
 }
+.star{
+    color: var(--cor-purple);
+}
 .comentarios label{
     font-size: 1.3em;
     font-weight: bold;
@@ -155,4 +181,18 @@ textarea::placeholder{
 .button{
     font-family: var(--font-prncipal);
     font-weight: bold;
+}
+.final{
+    text-align: center;
+    background-color: var(--cor-Black);
+    padding: 30px;
+}
+.rede{
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    font-family: var(--font-prncipal);
+}
+.rede:hover{
+    color: var(--cor-purple);
 }

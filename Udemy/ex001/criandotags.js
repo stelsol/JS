@@ -22,7 +22,7 @@ function criandodiv(){
         div3.classList.add('main-div3')
 
         const tag3 = [
-            {tag:'span',classe:'material-symbols-outlined',texto:'star'}
+            {tag:'span',classe:'material-symbols-outlined star',texto:'star'}
 
         ]
         for(let i = 0; i < 5 ; i++){

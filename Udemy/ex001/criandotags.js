@@ -7,7 +7,7 @@ function criandodiv(){
     const tag2 = [
         {tag:'img', src:'imagens/diariosdeumaapotecaria.webp',alt:'capa',classe:'main-cartaz'}
     ]
-
+    //* Estou revisando aqui
     const img = document.createElement(tag2[0].tag) // isto é a mesma coisa que const img = document.createElement("img"), estamos aproveitando apenas que construimos um array para continuar com o mesmo modelo.
     img.src = tag2[0].src
     img.alt = tag2[0].alt

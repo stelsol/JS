@@ -11,7 +11,7 @@ function criandodiv(){
     const img = document.createElement(tag2[0].tag) // isto é a mesma coisa que const img = document.createElement("img"), estamos aproveitando apenas que construimos um array para continuar com o mesmo modelo.
     img.src = tag2[0].src
     img.alt = tag2[0].alt
-    img.className = tag2[0].classe
+    img.className = tag2[0].className
     div1.appendChild(img)
 
     conteudo2.appendChild(div1) // o erro era que eu estava pegando a div mas ela ainda não estáva criada por estar lá em baixo, com ela aqui a div 1 já é criada e posso utilizala.

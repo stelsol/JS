@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+
+}
+.bfundo{
+    background-color: rgb(29, 83, 70);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: rgb(209, 199, 199);
+    max-width: 500px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 5px 10px rgb(12, 40, 34) ;
+}
+h1{
+    margin-bottom: 9px;
+    text-align: center;
+    
+}
+.paragrafos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.paragrafos p {
+    padding: 10px;
+    border-radius: 8px;
+}

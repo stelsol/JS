@@ -12,19 +12,49 @@
 //     console.log(numeros)
 // }
 
-const numero = [1,2,3,4,5,6,7]
+// const numero = [1,2,3,4,5,6,7]
 
-for (i in numero){
-    let numeros = numero[i]
-    if(numeros === 2){
-        console.log("Pulei o n 2")
-        continue;
-    }
+// for (i in numero){
+//     let numeros = numero[i]
+//     if(numeros === 2){
+//         console.log("Pulei o n 2")
+//         continue;
+//     }
     
 
-    if(numeros === 7){
-        console.log("encontrei o n 7 saindo")
+//     if(numeros === 7){
+//         console.log("encontrei o n 7 saindo")
+//         break;
+//     }
+//     console.log(numeros)
+// }
+
+
+// const frutas = ['Banana','Uva','Morango',  'Goiaba', 'Guaraná']
+
+// for ( fruta of frutas){
+    
+//     if( fruta === 'Abacaxi'){
+//         console.log('Abacaxi foi pulado')
+//         continue;
+//     }
+//     console.log(fruta)
+// }
+
+
+
+const frutas = ['Banana','Uva','Morango','Abacaxi', 'Goiaba', 'Guaraná']
+
+let temabacaxi = false
+
+for ( fruta of frutas){
+    
+    if( !temabacaxi){ //! Não tem abacaxi ?? no caso o ! transforma o false em True e confirma que não tem abacaxi 
+        console.log('Abacaxi não consta na lista, saindo ...')
         break;
     }
-    console.log(numeros)
+
+    console.log(fruta)
+
+
 }

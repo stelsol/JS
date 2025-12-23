@@ -3,7 +3,7 @@
 // function epaisagem(altura, largura){
 //     if(altura > largura){
 //         return false
-//     }
+//     }   //! Não precisa necessáriamente de true e false, pois se colocarmos apenas para retornar ele já nos retorna true or false
 //     return true
 // }
 // const modopaisagem = epaisagem(10, 400)

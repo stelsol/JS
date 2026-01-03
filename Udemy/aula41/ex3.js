@@ -14,7 +14,7 @@ function fizzbuzz(i){
         return "Buzz"
     }
     if ( !(i % 3 == 0 && i % 5 === 0) ){
-        return i    //! como aqui já é final não precisa desse if poderia ter colocado apenas return, pois se chegou aqui o que sobrou não é divisivel por eles
+        return i           //! como aqui já é final não precisa desse if poderia ter colocado apenas return, pois se chegou aqui o que sobrou não é divisivel por eles
     }
 }
 

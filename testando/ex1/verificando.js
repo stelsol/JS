@@ -1,25 +1,36 @@
-let form = document.querySelector('.dados')
 
-form.addEventListener('submit', function bloquear(evento){
-    evento.preventDefault()
 
-})
+// let form = document.querySelector('.dados')
 
-form.addEventListener('submit', function coletaDados(){
-let nome = form.querySelector('#nome').value
-let idade = Number(form.querySelector('#idade').value)
+// form.addEventListener('submit', function bloquear(evento){
+//     evento.preventDefault()
 
-let resul;
-    function verficar(){
+// })
+
+// form.addEventListener('submit', function coletaDados(){
+// let nome = form.querySelector('#nome').value
+// let idade = Number(form.querySelector('#idade').value)
+
+
+//     function verificar(){
+//             let resul;
+
+//             if(idade < 18){
+//                 resul = 'Menor de idade!'
+//             }else{
+//             resul = 'Maior de idade!'
+//             }
+//             return resul
+
+//         }
         
 
-        if(idade < 18){
-            resul = 'Menor de idade!'
-        }else{
-        resul = 'Maior de idade!'
-        }
-        
-    }
-verficar()
-})
+//     function criarp(){
+//         let p = document.createElement('p')
 
+//         p.innerHTML += `Olá ${nome} você é ${verificar()}`
+
+//         document.getElementById('#resulatdo').appendChild(p)
+//     }
+//     criarp()
+// })

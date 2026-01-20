@@ -16,7 +16,7 @@ let idade = Number(form.querySelector('#idade').value)
             let resul;
 
             if(idade < 18){
-                resul = 'Menor de idade!'
+                resul = 'Menor de idade'
             }else{
             resul = 'Maior de idade!'
             }

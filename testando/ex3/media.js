@@ -6,8 +6,9 @@ let mat = doc.querySelector('#materia')
 let nota = doc.querySelector('#nota')
 let faltas = doc.querySelector('#faltas')
 
+let materias = []
 calc.addEventListener('click', function materia(){
-    let nome = doc.querySelector('#nome').value
+    
     // Var para armazenar o resultado da condição
     let situacao 
     // Aqui eu adicionaria a condição da nota ou falta e o calculo ? 
@@ -29,8 +30,25 @@ calc.addEventListener('click', function materia(){
     }
     // console.log(nome, boletim)
     
-    let ul = doc.querySelector('.lista')
-    let li = document.createElement('li')
-    li.innerHTML = `${nome} ${boletim.mat} ${boletim.nota} ${boletim.faltas} ${boletim.situacao}` // teste para exibir
-    ul.appendChild(li)
+    materias.push(boletim)
+    console.log(materias)
+    
 }) 
+gerar.addEventListener('click', function boletim(){
+    let nome = doc.querySelector('#nome').value
+    
+    
+    })
+
+
+
+
+
+
+
+
+    //! teste 
+    // let ul = doc.querySelector('.lista')
+    // let li = document.createElement('li')
+    // li.innerHTML = `Nome: ${nome} Materia: ${boletim.mat} Nota: ${boletim.nota} Faltas: ${boletim.faltas} Situação: ${boletim.situacao}` // teste para exibir
+    // ul.appendChild(li)

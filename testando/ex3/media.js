@@ -35,10 +35,17 @@ calc.addEventListener('click', function materia(){
     
 }) 
 gerar.addEventListener('click', function boletim(){
+    //Calculo da média final do aluno com base nas matérias
     let nome = doc.querySelector('#nome').value
-    
-    
-    })
+    let somaN = 0
+    for(let i = 0; i < materias.length; i++){
+        
+        somaN = somaN + materias[i].nota
+
+    }
+    let MediaF = somaN / materias.length
+    console.log(MediaF)
+})
 
 
 

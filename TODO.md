@@ -2,7 +2,7 @@
 
 [] Fazer o sistema verificar se a lista está vazia caso ocorra de ser enviada vazia
 [] Evitar adicionar matéria com campos vazios
-[] Gerar o boletim de forma completa e interpretavel ao usuário
+[X] Gerar o boletim de forma completa e interpretavel ao usuário
 [] Limpar os inputs após adicionar matéria
 [] Mostrar quantas matérias foram adicionadas (Opcional)
 [] Estilizar o sistema    

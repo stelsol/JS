@@ -37,14 +37,34 @@ calc.addEventListener('click', function materia(){
 gerar.addEventListener('click', function boletim(){
     //Calculo da média final do aluno com base nas matérias
     let nome = doc.querySelector('#nome').value
+    let ul = doc.querySelector('.lista')
     let somaN = 0
+
+    //! Exibindo o nome do aluno no Boletim
+    let h2 = document.createElement('h2')
+    let aluBoletim = doc.querySelector('.aluBoletim')
+    h2.innerHTML = `Aluno(a): ${nome} `
+    aluBoletim.appendChild(h2)
+
+    //* Aqui será exibido a lista de materias com as informações de cada uma
     for(let i = 0; i < materias.length; i++){
         
+        let li = document.createElement('li')
+        li.innerHTML = `Materia: ${materias[i].mat} | Nota: ${materias[i].nota} | Faltas: ${materias[i].faltas} | Situação: ${materias[i].situacao}` 
+        ul.appendChild(li)
+
+
         somaN = somaN + materias[i].nota
 
     }
     let MediaF = somaN / materias.length
-    console.log(MediaF)
+
+    let medf = doc.querySelector('.medF')
+    let p = document.createElement('p')
+    p.innerHTML = `Média-Final: ${MediaF}`
+    medf.appendChild(p)
+    // console.log(nome)
+    // console.log(MediaF)
 })
 
 
@@ -57,5 +77,5 @@ gerar.addEventListener('click', function boletim(){
     //! teste 
     // let ul = doc.querySelector('.lista')
     // let li = document.createElement('li')
-    // li.innerHTML = `Nome: ${nome} Materia: ${boletim.mat} Nota: ${boletim.nota} Faltas: ${boletim.faltas} Situação: ${boletim.situacao}` // teste para exibir
+    // li.innerHTML = `Materia: ${boletim.mat} Nota: ${boletim.nota} Faltas: ${boletim.faltas} Situação: ${boletim.situacao}` // teste para exibir
     // ul.appendChild(li)

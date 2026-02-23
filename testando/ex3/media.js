@@ -8,6 +8,7 @@ let faltas = doc.querySelector('#faltas')
 
 let materias = []
 calc.addEventListener('click', function materia(){
+
     
     // Var para armazenar o resultado da condição
     let situacao 
@@ -40,6 +41,11 @@ gerar.addEventListener('click', function boletim(){
     let ul = doc.querySelector('.lista')
     let somaN = 0
 
+    if(materias.length === 0){
+        alert('ERROR(Não possui nenhuma matéria)')
+        return
+    }
+
     //! Exibindo o nome do aluno no Boletim
     let h2 = document.createElement('h2')
     let aluBoletim = doc.querySelector('.aluBoletim')
@@ -48,7 +54,8 @@ gerar.addEventListener('click', function boletim(){
 
     //* Aqui será exibido a lista de materias com as informações de cada uma
     for(let i = 0; i < materias.length; i++){
-        
+
+
         let li = document.createElement('li')
         li.innerHTML = `Materia: ${materias[i].mat} | Nota: ${materias[i].nota} | Faltas: ${materias[i].faltas} | Situação: ${materias[i].situacao}` 
         ul.appendChild(li)

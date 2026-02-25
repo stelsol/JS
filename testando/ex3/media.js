@@ -5,35 +5,50 @@ let gerar =  doc.querySelector('.gerar')
 let mat = doc.querySelector('#materia')
 let nota = doc.querySelector('#nota')
 let faltas = doc.querySelector('#faltas')
+let avisos = doc.querySelector('.avisos')
 
 let materias = []
 calc.addEventListener('click', function materia(){
-
     
-    // Var para armazenar o resultado da condição
-    let situacao 
-    // Aqui eu adicionaria a condição da nota ou falta e o calculo ? 
-    if (Number(nota.value) < 6 || Number(faltas.value) > 20){
+    
+    let inputs = doc.querySelectorAll('.inputs') //! tinha errado no query sector, lembre com all pega todos os inputs com essa classe é plural e sem é singular pega apenas 1 e não faz sentido aqui !!
+    let preenchidos = true
 
-        situacao = " Reprovado(a) "
-
-    }else {
-        situacao = " Aprovado(a) "
+    for(let i = 0; i < inputs.length; i++){
+        if(inputs[i].value === ""){ //! sempre por .value, pois queremos o que está dentro do input e não ele inteiro!
+            preenchidos = false
+            break
+        }
     }
-    // e depois adicionaria o calculo e ai viria a criação do objto??
-
-    let boletim = {
-        // nome: nome.value, // !Retirar o nome daqui, ñ tem necessidade dele aqui toda vez!
-        mat: mat.value ,  
-        nota: Number(nota.value), 
-        faltas: Number(faltas.value),
-        situacao: situacao
+    if(!preenchidos){
+        avisos.textContent = `Algum campo se encontra vazio!`
+        return
     }
-    // console.log(nome, boletim)
     
-    materias.push(boletim)
-    console.log(materias)
-    
+        // Var para armazenar o resultado da condição
+        let situacao 
+        // Aqui eu adicionaria a condição da nota ou falta e o calculo ? 
+        if (Number(nota.value) < 6 || Number(faltas.value) > 20){
+
+            situacao = " Reprovado(a) "
+
+        }else {
+            situacao = " Aprovado(a) "
+        }
+        // e depois adicionaria o calculo e ai viria a criação do objto??
+
+        let boletim = {
+            // nome: nome.value, // !Retirar o nome daqui, ñ tem necessidade dele aqui toda vez!
+            mat: mat.value ,  
+            nota: Number(nota.value), 
+            faltas: Number(faltas.value),
+            situacao: situacao
+        }
+        // console.log(nome, boletim)
+        
+        materias.push(boletim)
+        console.log(materias)
+
 }) 
 gerar.addEventListener('click', function boletim(){
     //Calculo da média final do aluno com base nas matérias
@@ -42,7 +57,7 @@ gerar.addEventListener('click', function boletim(){
     let somaN = 0
 
     if(materias.length === 0){
-        alert('ERROR(Não possui nenhuma matéria)')
+        avisos.textContent = `ERROR(Não a conteúdo para gerar o boletim)`
         return
     }
 
@@ -73,8 +88,6 @@ gerar.addEventListener('click', function boletim(){
     // console.log(nome)
     // console.log(MediaF)
 })
-
-
 
 
 

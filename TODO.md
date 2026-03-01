@@ -4,6 +4,7 @@
 [X] Evitar adicionar matéria com campos vazios
 [X] Gerar o boletim de forma completa e interpretavel ao usuário
 [] Limpar os inputs após adicionar matéria
+[X] Limpar Elementos dom e Arrays após adicionar novo aluno e matérias
 [] Mostrar quantas matérias foram adicionadas (Opcional)
 [] Estilizar o sistema    
-[] Documentar todo o código
+[X] Documentar todo o código

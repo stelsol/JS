@@ -13,7 +13,7 @@ calc.addEventListener('click', function materia(){
     
     let inputs = doc.querySelectorAll('.inputs') //! tinha errado no query sector, lembre com all pega todos os inputs com essa classe é plural e sem é singular pega apenas 1 e não faz sentido aqui !!
     let preenchidos = true
-
+    
     for(let i = 0; i < inputs.length; i++){
         if(inputs[i].value === ""){ //! sempre por .value, pois queremos o que está dentro do input e não ele inteiro!
             preenchidos = false
@@ -25,73 +25,84 @@ calc.addEventListener('click', function materia(){
         return
     }
     
-        // Var para armazenar o resultado da condição
-        let situacao 
-        // Aqui eu adicionaria a condição da nota ou falta e o calculo ? 
-        if (Number(nota.value) < 6 || Number(faltas.value) > 20){
-
-            situacao = " Reprovado(a) "
-
-        }else {
-            situacao = " Aprovado(a) "
-        }
-        // e depois adicionaria o calculo e ai viria a criação do objto??
-
-        let boletim = {
-            // nome: nome.value, // !Retirar o nome daqui, ñ tem necessidade dele aqui toda vez!
-            mat: mat.value ,  
-            nota: Number(nota.value), 
-            faltas: Number(faltas.value),
-            situacao: situacao
-        }
-        // console.log(nome, boletim)
+    // Var para armazenar o resultado da condição
+    let situacao 
+    // Aqui eu adicionaria a condição da nota ou falta e o calculo ? 
+    if (Number(nota.value) < 6 || Number(faltas.value) > 20){
         
-        materias.push(boletim)
-        console.log(materias)
+        situacao = " Reprovado(a) "
+        
+    }else {
+        situacao = " Aprovado(a) "
+    }
+    // e depois adicionaria o calculo e ai viria a criação do objto??
+    
+    let boletim = {
+        // nome: nome.value, // !Retirar o nome daqui, ñ tem necessidade dele aqui toda vez!
+        mat: mat.value ,  
+        nota: Number(nota.value), 
+        faltas: Number(faltas.value),
+        situacao: situacao
+    }
+    // console.log(nome, boletim)
+    
+    materias.push(boletim)
 
-}) 
-gerar.addEventListener('click', function boletim(){
-    //Calculo da média final do aluno com base nas matérias
-    let nome = doc.querySelector('#nome').value
-    let ul = doc.querySelector('.lista')
-    let somaN = 0
+    for(let i = 0; i < inputs.length; i++){
 
-    if(materias.length === 0){
+        inputs[i].value = ""
+    }
+    avisos.textContent = `Matéria adicionada`
+        // console.log(materias)
+        
+    }) 
+    gerar.addEventListener('click', function boletim(){
+        //Calculo da média final do aluno com base nas matérias
+
+        // let nome = doc.querySelector('#nome').value //! Nessa parte ao invé de já pegar e converter o valor do input é melhor primeiro pegarmos o input e após isso fazer a conversão
+        let inputAluno = doc.querySelector('#nome') 
+        let nome = inputAluno.value //! maneira melhor e que funcionou 
+        let ul = doc.querySelector('.lista')
+        let somaN = 0
+        
+        if(materias.length === 0){
         avisos.textContent = `ERROR(Não a conteúdo para gerar o boletim)`
         return
-    }
+        }
     
-    ul.innerHTML = " "
-    //! Exibindo o nome do aluno no Boletim
-    let h2 = document.createElement('h2')
-    let aluBoletim = doc.querySelector('.aluBoletim')
-    aluBoletim.innerHTML = " "
-    h2.innerHTML = `Aluno(a): ${nome} `
-    aluBoletim.appendChild(h2)
-    
-    //* Aqui será exibido a lista de materias com as informações de cada uma
-    for(let i = 0; i < materias.length; i++){
+        ul.innerHTML = " "
+        //! Exibindo o nome do aluno no Boletim
+        let h2 = document.createElement('h2')
+        let aluBoletim = doc.querySelector('.aluBoletim')
+        aluBoletim.innerHTML = " "
+        h2.innerHTML = `Aluno(a): ${nome} `
+        aluBoletim.appendChild(h2)
         
-        
-        let li = document.createElement('li')
-        li.innerHTML = `Materia: ${materias[i].mat} | Nota: ${materias[i].nota} | Faltas: ${materias[i].faltas} | Situação: ${materias[i].situacao}` 
-        ul.appendChild(li)
-        
-        
-        somaN = somaN + materias[i].nota
-        
-    }
-    let MediaF = somaN / materias.length
+        //* Aqui será exibido a lista de materias com as informações de cada uma
+        for(let i = 0; i < materias.length; i++){
+            
+            
+            let li = document.createElement('li')
+            li.innerHTML = `Materia: ${materias[i].mat} | Nota: ${materias[i].nota} | Faltas: ${materias[i].faltas} | Situação: ${materias[i].situacao}` 
+            ul.appendChild(li)
+            
+            
+            somaN = somaN + materias[i].nota
+            
+        }
+        let MediaF = somaN / materias.length
 
-    let medf = doc.querySelector('.medF')
-    let p = document.createElement('p')
-    p.innerHTML = `Média-Final: ${MediaF}`
-    
-    medf.innerHTML = " "
-    medf.appendChild(p)
-    // console.log(nome)
-    // console.log(MediaF)
-    materias = []
+        let medf = doc.querySelector('.medF')
+        let p = document.createElement('p')
+        p.innerHTML = `Média-Final: ${MediaF}`
+        
+        medf.innerHTML = " "
+        medf.appendChild(p)
+        // console.log(nome)
+        // console.log(MediaF)
+        materias = []
+        inputAluno.value = ""
+        // nome.value = ""  // ! nesse caso como anteriormente nome já tinha sido convertido para o valor, essa linha perdeu o sentido pois já era uma string estava assim "Stella".value = " "
 })
 
 

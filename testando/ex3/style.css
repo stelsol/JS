@@ -14,22 +14,50 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 20px 0px;
+    padding: 10px 0px;
+    background-color: rgb(97, 23, 23);
+}
+
+.barraPesquisa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    gap: 10px;
+    max-width: 20%;
+    flex: 1;
+    border-radius: 20px;
+    border: 2px solid rgb(208, 208, 208);
+    color: rgba(255, 255, 255, 0.71);
 }
 .funcoes{
     display: flex;
-    gap: 60px;
+    gap: 40px;
+    color: rgba(255, 255, 255, 0.71);
 }
+
 /* Main */
 .container{
     flex: 1;
     
 }
 .dados{
-    margin: 50px;
+    margin: 20px;
+}
+.avisos{
+    padding: 20px;
+}
+.botoes{
+    max-width: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 /* Footer */
 .rodape{
     text-align: center;
     padding: 30px;
+    color: rgba(255, 255, 255, 0.71);
+    background-color: rgb(97, 23, 23);
 }

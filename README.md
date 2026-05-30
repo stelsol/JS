@@ -1,2 +1,2 @@
 # JS
- Respositório destinado a aprendisagem de JavaScript
+ <Strobg> Respositório destinado a aprendizagem de JavaScript </strong>
